@@ -6,8 +6,6 @@ from art import *
 
 tprint("RANDOM MATH QUIZ")
 
-
-
 def nivelGod():
     contadorLVLGod = 0
     while contadorLVLGod < 5:
@@ -15,7 +13,7 @@ def nivelGod():
         numeroDosLVLGod = random.randint(500,1000)
         sumaLVLGod = int(input(f"{numeroUnoLVLGod} + {numeroDosLVLGod}?\n------\n"))
         if (sumaLVLGod) == (numeroDosLVLGod + numeroUnoLVLGod):
-            contadorLVL2 += 1
+            contadorLVLGod += 1
         elif (sumaLVLGod) != (numeroDosLVLGod + numeroUnoLVLGod):
             contadorLVLGod -= 1
         print("Tu puntaje: ", contadorLVLGod)
